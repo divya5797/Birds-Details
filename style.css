@@ -1,0 +1,261 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    min-height: 100vh;
+    background-color: antiquewhite;
+    /*border: 2px solid black;*/
+    display: flex;
+    flex-direction: column;
+}
+.navbar{
+    width: 100%;
+    background-color: gray;
+    color: white;
+    padding: 15px 10px ;
+    text-align: center;
+}
+.content{
+    /*border: 2px solid rgb(2, 170, 100);*/
+    display: flex;
+    flex: 1;
+}
+.sidebar{
+    background-color: rgb(36, 36, 155);
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+}
+.sidebar ul{
+    list-style: none;
+}
+.sidebar ul li a{
+    text-decoration: none;
+    color: #f5ecee;
+
+    padding: 15px 10px;
+    display: inline-block;
+}
+.main-content{
+    /*border: 2px solid blue;*/
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.full-content{
+    /*border: 2px solid white;*/
+    flex: 1;
+ 
+}
+.full-content .left{
+    width: 450px;
+    float: left;
+}
+.full-content .left image{
+   /* float: left;*/
+    width: 450px;
+}
+.full-content .right{
+    width: 450px;
+    float: left;
+}
+.full-content .right .details{
+   /* float: left;*/
+    width: 100%;
+}
+.full-content .right .details h2{
+    text-align: center;*/
+    text-decoration: underline;
+}
+.full-content .right .details li a{
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.box2{
+    /*border: 2px solid white;*/
+    flex: 1;
+ 
+}
+.box2 .left{
+    width: 450px;
+    float: left;
+}
+.box2 .left image{
+    float: left;
+    width: 100%;
+}
+.box2 .right{
+    width: 450px;
+    float: left;
+
+}
+.box2 .right .details{
+    float: left;
+    width: 100%;
+}
+.box2 .right .details h2{
+    text-align: center;
+    text-decoration: underline;
+
+}
+.box2 .right .details li a{
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+.cards{
+   /* border: 2px solid rgb(26, 12, 12);*/
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+ .cards .card1{
+
+    background-color: rgb(167, 224, 224);
+    overflow: hidden;
+    margin: 20px 50px;
+  
+    
+}
+.card1 img{
+    width: 100%;
+    height: auto;
+}
+
+.card1 .content1 h3{
+    font-size: 20px;
+    margin-left: 60px;
+    margin-bottom: 8px;
+
+ }
+ .card1  button{
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: blue;
+    color: white;
+    margin-left: 60px;
+    border-radius: 5px;
+   
+ }
+ .cards .card2{
+    background-color: rgb(167, 224, 224);
+    overflow: hidden;
+    margin: 20px 50px; 
+}
+.card2 img{
+    width: 100%;
+    height: auto;
+}
+.card2 .content2 h3{
+    font-size: 20px;
+    margin-left: 60px;
+    margin-bottom: 8px;
+ }
+ .card2  button{
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: blue;
+    color: white;
+    margin-left: 60px;
+    border-radius: 5px;
+
+ }
+ .cards .card3{
+    background-color: rgb(167, 224, 224);
+    overflow: hidden;
+    margin: 20px 50px;
+
+}
+ 
+.card3 img{
+    width: 100%;
+    height: auto;
+}
+.card3 .content3 h3{
+    font-size: 20px;
+    margin-left: 60px;
+    margin-bottom: 8px;
+
+ }
+ .card3  button{
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: blue;
+    color: white;
+    margin-left: 60px;
+    border-radius: 5px;
+   
+ }
+  
+.footer{
+    background: #100f0ff1;
+    color: white;
+    text-align: center;
+    padding: 10px 0px;
+    width: 100%;
+   
+}
+footer .p{
+    text-align: center;
+}
+.fa-facebook{
+    font-size: 20px;
+    color: blue;
+}
+.fa-square-instagram{
+    font-size: 20px;
+    color: rgb(163, 60, 77);
+}
+.fa-square-twitter{
+    font-size: 20px;
+    color: rgb(41, 123, 156);
+}
+.fa-youtube{
+    font-size: 20px;
+    color: red;
+}
+
+
+@media screen and (max-width: 460px)
+{
+    .content{
+        flex-direction: column;
+        
+    }
+    .sidebar{
+        width: 100%;
+    }
+    .sidebar ul{
+        margin-top:0px; 
+        padding: 0px; 
+    }
+    .sidebar ul li{
+        display: inline-block;
+    }
+    /*.main-content{
+        background-color: aqua;
+    }*/
+    .full-content{
+        flex-direction: column;
+        width: 100%;
+    }
+    .full-content .left image{
+        width: 100%;
+        
+    }
+    .box2 .left image{
+        width: 100%;
+        
+    }
+    .cards{
+        flex-direction: column;
+        width: 100%;
+    }
+    .footer{
+        flex-direction: column;
+    }
+}
