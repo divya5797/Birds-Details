@@ -30,6 +30,3 @@ The "Buy" buttons are just placeholders and do not perform any real purchase act
 
 
 Live at:-  
-This is a frontend-only project.
-
-The "Buy" buttons are just placeholders and do not perform any real purchase action.
